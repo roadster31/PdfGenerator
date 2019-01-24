@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<routes xmlns="http://symfony.com/schema/routing"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://symfony.com/schema/routing http://symfony.com/schema/routing/routing-1.0.xsd">
+
+    <route id="pdf_generator.get_pdf" path="/getpdf/{template}/{outputFileName}">
+        <default key="_controller">PdfGenerator\Controller\GeneratorController::downloadPdf</default>
+        <requirement key="template">.*</requirement>
+        <requirement key="outputFileName">.*</requirement>
+    </route>
+
+    <route id="pdf_generator.view_pdf" path="/viewpdf/{template}/{outputFileName}">
+        <default key="_controller">PdfGenerator\Controller\GeneratorController::viewPdf</default>
+        <requirement key="template">.*</requirement>
+        <requirement key="outputFileName">.*</requirement>
+    </route>
+</routes>
