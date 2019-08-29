@@ -1,4 +1,5 @@
 <?php
+
 return array(
-    // 'an english string' => 'La traduction française de la chaine',
+    'We\'re sorry, this PDF document %name is not available at the moment.' => 'Désoler, le PDF %name n\'est pas disponible pour le moment. ',
 );
