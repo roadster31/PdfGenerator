@@ -74,8 +74,5 @@ Ajouter dans le fichier composer.json de thelia
 composer require cqfdev/pdf-generator-module:~0.5.1
 ```
 
-## TODO
-
-Internationalisation et traductions.
 
 
