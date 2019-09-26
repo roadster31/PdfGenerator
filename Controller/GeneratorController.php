@@ -31,7 +31,7 @@ class GeneratorController extends BaseFrontController
 
     public function viewPdf($template, $outputFileName)
     {
-        return $this->renderPdfTemplate($template, $outputFileName, false);
+        return $this->renderPdfTemplate($template, $outputFileName, true);
     }
 
     /**
